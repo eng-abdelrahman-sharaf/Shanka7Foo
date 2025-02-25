@@ -10,7 +10,6 @@ def insertion_sort(arr):
 
 def elekhtyar_sort(arr):
     for i in range(len(arr)):
-        j = i+1
         min = i
         for j in range(i,len(arr)):
             if arr[j] < arr[min]:

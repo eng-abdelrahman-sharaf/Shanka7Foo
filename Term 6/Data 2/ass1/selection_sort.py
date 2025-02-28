@@ -7,10 +7,11 @@ def bubble_sort(array):
 
 def selection_sort(array):
     for i in range(len(array)):
-        j=i
-        while j>0 and array[j-1]>array[j]:
-            array[j], array[j-1] = array[j-1], array[j]
-            j -= 1
+        min = i
+        for j in range(i+1, len(array)):
+            if array[j] < array[min]:
+                min = j
+        array[i], array[min] = array[min], array[i]
     return array
 
 def insertion_sort(array):

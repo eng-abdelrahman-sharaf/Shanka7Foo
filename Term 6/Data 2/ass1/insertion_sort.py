@@ -3,7 +3,6 @@ def insertion_sort(arr):
         j = i
         while j >0 and arr[j-1]>arr[j]:
             arr[j],arr[j-1] = arr[j-1],arr[j]
-            print(arr)
             j -= 1
     return arr
 
@@ -26,8 +25,3 @@ def alfoka3a_sort (arr):
                 arr[i],arr[j] = arr[j],arr[i]
     return arr
 
-
-
-
-
-print(alfoka3a_sort([8,10,44,12,-6]))

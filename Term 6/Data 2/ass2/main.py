@@ -96,9 +96,10 @@ if __name__ == "__main__":
        # plt.figure()
        plt.ylabel("time (ms)")
        plt.xlabel("size of array")
+       plt.title("Sorting Algorithms - Logarithmic Scale")
        plt.ylabel("Time (ms)")
        plt.xlabel("Array Size")
-       plt.yscale("log")
+       plt.xscale("log")
 
      #  plt.plot(sizes, times[0], label="Selection Sort")
       # plt.plot(sizes, times[1], label="Insertion Sort")

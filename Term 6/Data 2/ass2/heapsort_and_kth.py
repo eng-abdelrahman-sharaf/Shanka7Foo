@@ -75,6 +75,7 @@ def heap_sort(array):
     for heap_size in range(len(array) , 1 , -1):
         array[0] , array[heap_size-1] = array[heap_size-1] , array[0]
         max_heapify(array,0,heap_size-1)
+    return array
 
 def find_kth(array,k,start=0,end=None):
     i = start-1

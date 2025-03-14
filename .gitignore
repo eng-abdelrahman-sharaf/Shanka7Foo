@@ -26,3 +26,21 @@ Thumbs.db
 # Ignore build directories
 build/
 out/
+
+# Ignore __pycache__ directories
+__pycache__/
+
+# Ignore virtual environment directories
+.venv/
+venv/
+env/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.egg-info/
+
+# Ignore Python compiled files
+*.pyc
+*.pyo
+*.pyd

@@ -22,25 +22,30 @@ def heapsort(arr):
     return arr
 
 
+import random
+
 def partition(arr, low, high):
+    pivot_index = random.randint(low, high)
+    arr[low], arr[pivot_index] = arr[pivot_index], arr[low]
+
     pivot = arr[low]
     left = low + 1
     right = high
+
     while True:
         while left <= right and arr[left] <= pivot:
             left += 1
-
         while left <= right and arr[right] >= pivot:
             right -= 1
-
         if left > right:
             break
         arr[left], arr[right] = arr[right], arr[left]
+
     arr[low], arr[right] = arr[right], arr[low]
     return right
 
 
-def quicksort(arr, low , high):
+def quicksort(arr, low, high):
     if low < high:
         pi = partition(arr, low, high)
         quicksort(arr, low, pi - 1)

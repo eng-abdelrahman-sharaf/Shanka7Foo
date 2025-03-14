@@ -71,50 +71,50 @@ def compare_sorting_techniques(array_sizes):
 
 
 if __name__ == "__main__":
-      # sizes = [int(i) for i in[10,100,1000,2e3 , 5e3 , 8e3 , 10e3 , 15e3 , 20e3 , 50e3 , 100e3]]
-       sizes = [int(i) for i in [10,100,1000,2e3,5e3 ]]
-       times = compare_sorting_techniques(sizes)
+    sizes = [int(i) for i in[10,100,1000,2e3 , 5e3 , 8e3 , 10e3 , 15e3 , 20e3 , 50e3 , 100e3]]
+    # sizes = [int(i) for i in [10,100,1000,2e3,5e3 ]]
+    times = compare_sorting_techniques(sizes)
 
-       plt.figure(figsize=(10, 6))
-       plt.ylabel("Time (ms)")
-       plt.xlabel("Array Size")
-       plt.title("Sorting Algorithms - Linear Scale")
+    plt.figure(figsize=(10, 6))
+    plt.ylabel("Time (ms)")
+    plt.xlabel("Array Size")
+    plt.title("Sorting Algorithms - Linear Scale")
 
-     #  plt.plot(sizes, times[0], label="Selection Sort")
-      # plt.plot(sizes, times[1], label="Insertion Sort")
-      # plt.plot(sizes, times[2], label="Bubble Sort")
-       plt.plot(sizes, times[3], label="Merge Sort")
-       plt.plot(sizes, times[4], label="Quick Sort")
-       plt.plot(sizes, times[5], label="Heap Sort")
+    plt.plot(sizes, times[0], label="Selection Sort")
+    plt.plot(sizes, times[1], label="Insertion Sort")
+    plt.plot(sizes, times[2], label="Bubble Sort")
+    plt.plot(sizes, times[3], label="Merge Sort")
+    plt.plot(sizes, times[4], label="Quick Sort")
+    plt.plot(sizes, times[5], label="Heap Sort")
 
-       plt.legend()
-       plt.grid()
-       plt.show()
+    plt.legend()
+    plt.grid()
+    plt.show()
 
 
-       plt.figure(figsize=(10, 6))
-       # plt.figure()
-       plt.ylabel("time (ms)")
-       plt.xlabel("size of array")
-       plt.title("Sorting Algorithms - Logarithmic Scale")
-       plt.ylabel("Time (ms)")
-       plt.xlabel("Array Size")
-       plt.xscale("log")
+    plt.figure(figsize=(10, 6))
+    # plt.figure()
+    plt.ylabel("time (ms)")
+    plt.xlabel("size of array")
+    plt.title("Sorting Algorithms - Logarithmic Scale")
+    plt.ylabel("Time (ms)")
+    plt.xlabel("Array Size")
+    plt.xscale("log")
 
-     #  plt.plot(sizes, times[0], label="Selection Sort")
-      # plt.plot(sizes, times[1], label="Insertion Sort")
-      # plt.plot(sizes, times[2], label="Bubble Sort")
-       plt.plot(sizes, times[3], label="Merge Sort")
-       plt.plot(sizes, times[4], label="Quick Sort")
-       plt.plot(sizes, times[5], label="Heap Sort")
+    plt.plot(sizes, times[0], label="Selection Sort")
+    plt.plot(sizes, times[1], label="Insertion Sort")
+    plt.plot(sizes, times[2], label="Bubble Sort")
+    plt.plot(sizes, times[3], label="Merge Sort")
+    plt.plot(sizes, times[4], label="Quick Sort")
+    plt.plot(sizes, times[5], label="Heap Sort")
 
-       plt.legend()
-       plt.show()
+    plt.legend()
+    plt.show()
 
-       arr = [12, 11, 13, 5, 6, 7, 19, 21, 3, 8, 15]
-       thresh = 6
-       hybrid_merge_insertion_sort(arr, 0, len(arr) - 1, thresh)
-       print(arr)
+    arr = [12, 11, 13, 5, 6, 7, 19, 21, 3, 8, 15]
+    thresh = 6
+    hybrid_merge_insertion_sort(arr, 0, len(arr) - 1, thresh)
+    print(arr)
 
-       arr_for_kth = [3,41,16,25,63,52,40]
-       print(find_kth(arr_for_kth, 3,))
+    arr_for_kth = [3,41,16,25,63,52,40]
+    print(find_kth(arr_for_kth, 3,))
